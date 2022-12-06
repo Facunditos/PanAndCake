@@ -35,6 +35,7 @@ a {
 }
 #form{
     width: 50%;
+    max-width: 32rem;
 }
 #search-magnifying-glass{
     background-color: transparent;
@@ -66,12 +67,36 @@ a {
     height: 2rem;
 }
 
-#cart{
+#cart-top{
     height: 2rem;
     padding-top: 8px;
 }
 
 
+#nav-bar-list{
+    display: none;
+}
 
+
+@media (min-width: 1024px) {
+    #hamburguer-menu{
+        display: none;
+    }
+    
+    #cart-top{
+        display: none;
+    }
+    
+    #nav-bar-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-bar-list li{
+        display: inline-block;
+        padding: 1rem;
+    }
+}    
 
 
