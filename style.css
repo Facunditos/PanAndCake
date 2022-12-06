@@ -6,8 +6,72 @@
 
 
 body {
-    font-size: 16px;
     width: 100vw;
+    font-family: 'Lato', sans-serif;
+    
 }
+.color{
+    color: #876124;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+
+.nav-bar{
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+#title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7rem;
+    height: 2rem;
+}
+#form{
+    width: 50%;
+}
+#search-magnifying-glass{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #876124;
+    color: #876124;
+    position: absolute;
+    padding: 8.5px;
+}
+#search-input{
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.9rem;
+    border:#876124 solid 0.1rem;
+    padding-left: 2.2rem;
+    font-family: 'Lato', sans-serif;
+    color: #876124;
+}
+#search-input::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: #876124;
+}
+
+#hamburguer-menu{
+    background-color: transparent;
+    border: none;
+    color: #876124;
+    padding-top: 3px;
+    height: 2rem;
+}
+
+#cart{
+    height: 2rem;
+    padding-top: 8px;
+}
+
+
+
 
 
