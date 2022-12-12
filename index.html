@@ -11,15 +11,16 @@
 </head>
 <body class="color">
     <header>
-        <nav class="nav-bar">
-                <a href="./" class="titulo">
-                    <h1 id="title">
+        <nav>
+            <div id="nav-bar-top">
+                <h1 >
+                    <a href="./" id="title">
                         Pan & Cake
-                    </h1>
-                </a>
+                    </a>
+                </h1>
                 <form action="./cart.html" method="get" id="form">
                     <div class="search-bar">
-                       <button type="submit" id="search-magnifying-glass">
+                        <button id="search-magnifying-glass">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                         <input 
@@ -30,34 +31,167 @@
                         > 
                     </div>
                 </form>
-                <button type="button" id="hamburguer-menu">
+                <button id="hamburguer-menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <a href="./cart.html" id="cart-top">
                     <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
                 </a>
-                <div id="nav-bar-list">
-                    <ul id="list-left">
-                        <li>Categorías</li>
-                        <li>Ofertas</li>
-                        <li>Historial</li>
-                    </ul>
-                    <ul id="list-right">
-                        <li>Creá tu cuenta</li>
-                        <li>Ingresá</li>
-                        <li>Mis compras</li>
-                        <li>
-                            <a href="./cart.html" id="cart-bottom">
-                                <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                    
+            </div>
+            <div id="nav-bar-bottom">
+                <ul id="list-left">
+                    <li>Categorías</li>
+                    <li>Ofertas</li>
+                    <li>Historial</li>
+                </ul>
+                <ul id="list-right">
+                    <li>Creá tu cuenta</li>
+                    <li>Ingresá</li>
+                    <li>Mis compras</li>
+                    <li>
+                        <a href="./cart.html" id="cart-bottom">
+                            <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+        <h2 class="section-title-shop">Las más vendidas</h2>
+        <section class="shop">
+            <article class="card">
+                <a href="/products/id">
+                    <img class="product-image" src="./img/lemonPie.jpg" alt="lemonPie">
+                </a>    
+                <div class="content">
+                    <a href="/products/id">
+                        <h3 class="product-name">LEMON PIE</h3>
+                        <p class="product-description">Base de masa sablée, crema de limón. Cobertura: merengue italiano.</p>
+                    </a>
+                    <p class="product-price">$ 4.180</p>
+                    <form class="add-to-cart-form" action="/me/cart/product.id" method="get">
+                        <button class="add-to-cart-botton">
+                            <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
+                            AGREGAR
+                        </button>
+                    </form>
+                </div>
+            </article>
+            <article class="card">
+                <a href="/products/id">
+                    <img class="product-image" src="./img/kroccoMilk.jpg" alt="kroccoMilk">
+                </a>    
+                <div class="content">
+                    <a href="/products/id">
+                        <h3 class="product-name">KROCCO MILK</h3>
+                        <p class="product-description">Torta de chocolate, cremoso mousse de chocolate semi amargo, frutos rojos y microgalletitas cubiertas de chocolate. Cobertura: chocolate negro y amarenas.</p>
+                    </a>
+                    <p class="product-price">$ 3.600</p>
+                    <form class="add-to-cart-form" action="/me/cart/product.id" method="get">
+                        <button class="add-to-cart-botton">
+                            <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
+                            AGREGAR
+                        </button>
+                    </form>
+                </div>
+            </article>
+            <article class="card">
+                <a href="/products/id">
+                    <img class="product-image" src="./img/tartaBrownie.jpg" alt="tartaBrownie">
+                </a>    
+                <div class="content">
+                    <a href="/products/id">
+                        <h3 class="product-name">TARTA BROWNIE</h3>
+                        <p class="product-description">Torta de chocolate con nueces, mousse de chocolate, trocitos de merengue y dulce de leche. Cobertura: merengue italiano y viruta de chocolate.</p>
+                    </a>
+                    <p class="product-price">$ 8.500</p>
+                    <form class="add-to-cart-form" action="/me/cart/product.id" method="get">
+                        <button class="add-to-cart-botton">
+                            <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
+                            AGREGAR
+                        </button>
+                    </form>
+                </div>
+            </article>
+            <article class="card">
+                <a href="/products/id">
+                    <img class="product-image" src="./img/tortaTofi.jpg" alt="tortaTofi">
+                </a>    
+                <div class="content">
+                    <a href="/products/id">
+                        <h3 class="product-name">TORTA TOFFI</h3>
+                        <p class="product-description">Base de masa frola de chocolate con castañas de cajú y dulce de leche. Cobertura: ganache y rulos de chocolate.</p>
+                    </a>
+                    <p class="product-price">$ 1.200</p>
+                    <form class="add-to-cart-form" action="/me/cart/product.id" method="get">
+                        <button class="add-to-cart-botton">
+                            <i class="fa-solid fa-cart-shopping" id="cart-detail"></i>
+                            AGREGAR
+                        </button>
+                    </form>
+                </div>
+            </article>
+        </section>
     </main>
-    
+    <footer id="footer">
+        <div id="content-footer">
+            <ul id="contact-list">
+                <li >
+                    <a class="contact-item" href="https://api.whatsapp.com/send?phone=5493415496558">
+                        <i class="fab fa-whatsapp"></i>
+                        <p class="contact-data">+549-341-5-49-6558</p>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p class="contact-data">pancake@pancake.com.ar</p>
+                </li>
+                <li class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="contact-data">9 de Julio 3274, Rosario, Santa Fe, Argentina.</p>
+                </li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.08776513666!2d-60.670053085253905!3d-32.94869217932081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5dc6519b37%3A0x3c45b2db2051e0ce!2sPan%26Cake!5e0!3m2!1ses!2sar!4v1670592685262!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+        </div>
+        <div id="contact">
+            <h3>Contacto</h3>
+            <form action="https://usebasin.com/f/dec7a14e10e0" method="post">
+               <div class="field">
+                <label for="" class="field-label">Nombre y Apellido:</label>
+                <input class="field-input" type="text" name="name" required>
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Dirección:</label>
+                <input class="field-input" type="text" name="address">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Teléfono:</label>
+                <input class="field-input" type="tel" name="phone">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Ciudad:</label>
+                <input class="field-input" type="text" name="city">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Provincia:</label>
+                <input class="field-input" type="text" name="province">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">País:</label>
+                <input class="field-input" type="text" name="country">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Correo Electrónico:</label>
+                <input class="field-input" type="email" name="email">
+               </div>
+               <div class="field">
+                <label for="" class="field-label">Deje su consulta o comentario:</label>
+                <textarea class="field-input" name="message" id="" cols="30" rows="10"></textarea>
+               </div>
+               <button class="buy-cart-button">Enviar</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
